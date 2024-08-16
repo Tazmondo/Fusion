@@ -106,7 +106,7 @@ export type Value<T, S = T> = StateObject<T> & {
 export type ValueConstructor = <T>(
 	scope: Scope<unknown>,
 	initialValue: T
-) -> Value<T, any>
+) -> Value<T>
 
 -- A state object whose value is derived from other objects using a callback.
 export type Computed<T> = StateObject<T> & {
